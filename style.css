@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 100px;
+   
+    
+    
+}
+.deskop{
+width: 300px;
+height: 100%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.mobile{
+    display: none;
+}
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+
+.hero-left h1{
+    color: hsl(228, 12%, 48%) ;
+    font-family: "Montserrat", serif;
+    font-weight:400;
+    font-size: small;
+    letter-spacing: 2px;
+  
+    margin:  20px 0 0 0 ;
+}
+.hero-left .p1{
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+    font-size:x-large;
+    color: hsl(212, 21%, 14%);
+    margin: 2 0 10;
+ 
+}
+.hero-left .p2-mobile{
+    display: none;
+}
+
+.hero-left .p3{
+    color: hsl(228, 12%, 48%) ;
+    font-family: "Montserrat", serif;
+    line-height: 1.5rem;
+    margin: 0   ;
+}
+
+
+.lesPrix{
+    font-family: "Fraunces", serif;
+     color: hsl(158, 36%, 37%);
+     display: flex;
+     margin: 0 ;
+     height: 70px;
+}
+.prix{
+   
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 25px;
+   
+}
+.prix-mobile{
+    display: none;
+}
+.prixCasse{
+    font-weight: 500;
+    font-size: 10px;
+    color: hsl(228, 12%, 48%) ;
+    font-family: "Montserrat", serif;
+    margin-left: 10px;
+    padding-top: 27px;
+    text-decoration:line-through;
+}
+.prixCasse-mobile{
+    display: none;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+ 
+}
+.text-add{
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: white;
+    color: hsl(228, 12%, 48%) ;
+    border: 1px , solid;
+}
+
+@media (max-width:750px) {
+    
+    .menu{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 90%;
+        
+    }
+    .deskop{
+        display: none;
+       
+
+    }
+    .hero-left .p1{
+        display: none;
+        
+    }
+    .hero-left .p2-mobile{
+        display: flex;
+        font-family: "Fraunces", serif;
+        font-weight: 900;
+        font-size:xx-large;
+        color: hsl(212, 21%, 14%);
+    }
+    .mobile{
+        display: inline-flex;
+        width: 400px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .btn{
+        width: 330px;
+        height: 55px;
+    ;
+        margin-top:20px;
+    }
+    .prix{
+        display: none;
+    }
+    .prix-mobile{
+        display: flex;
+       font-size: 32px;
+       font-weight: bold;
+       margin-top: 27px;
+    }
+    .prixCasse{
+        display: none;
+    }
+    .prixCasse-mobile{
+        display: flex;
+        font-weight: 500;
+        font-size: 15px;
+        color: hsl(228, 12%, 48%) ;
+        font-family: "Montserrat", serif;
+        margin-left: 20px;
+        padding-top: 22px;
+        text-decoration:line-through;  
+    }
+}
