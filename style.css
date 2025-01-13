@@ -118,7 +118,7 @@ border-bottom-left-radius: 10px;
 }
 .btn:hover{
     background-color: hsl(158, 44%, 20%);
-    color: hsl(228, 12%, 48%) ;
+    color: white;
     border: 1px , solid;
 }
 
